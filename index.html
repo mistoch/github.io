@@ -1,11 +1,114 @@
-
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>睿研云枢 - 首页</title>
-  <link rel="stylesheet" href="css/style.css">
+  <style>
+    body {
+      font-family: 'Microsoft YaHei', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f7fa;
+    }
+
+    header {
+      background-color: #003366;
+      color: white;
+      padding: 20px;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav .logo {
+      font-size: 1.5em;
+      font-weight: bold;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav ul li {
+      display: inline;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .hero {
+      background-color: #e6f0ff;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .hero h1 {
+      color: #003366;
+    }
+
+    .modules {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 40px 20px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      transition: transform 0.2s ease-in-out;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .dashboard {
+      background: #fff;
+      margin: 20px;
+      padding: 20px;
+      border-left: 5px solid #003366;
+      font-size: 1.1em;
+    }
+
+    footer {
+      background-color: #003366;
+      color: white;
+      text-align: center;
+      padding: 10px;
+    }
+
+    .login-button {
+      background: white;
+      color: #003366;
+      padding: 8px 16px;
+      border-radius: 4px;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .login-button:hover {
+      background: #cce0ff;
+    }
+
+    @media (max-width: 600px) {
+      nav ul {
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+  </style>
 </head>
 <body>
 
@@ -13,12 +116,12 @@
     <nav>
       <div class="logo">睿研云枢</div>
       <ul>
-        <li><a href="index.html">首页</a></li>
-        <li><a href="yfzbj.html">研发准备金</a></li>
+        <li><a href="#">首页</a></li>
+        <li><a href="#">研发准备金</a></li>
         <li><a href="#">项目储备库</a></li>
-        <li><a href="#">费用跟踪</a></li>
+        <li><a href="#">费用动态跟踪</a></li>
         <li><a href="#">智能决策</a></li>
-        <li><a href="#">登录</a></li>
+        <li><a class="login-button" href="#">登录</a></li>
       </ul>
     </nav>
   </header>
@@ -29,14 +132,26 @@
   </section>
 
   <section class="modules">
-    <div class="card"><h3>研发准备金管理</h3><p>智能测算、动态监控。</p></div>
-    <div class="card"><h3>项目储备库</h3><p>方向推荐、智能鉴定。</p></div>
-    <div class="card"><h3>费用动态跟踪</h3><p>支出监控、报表归集。</p></div>
-    <div class="card"><h3>智能辅助决策</h3><p>对标分析、政策匹配。</p></div>
+    <div class="card">
+      <h3>研发准备金管理</h3>
+      <p>智能测算、动态监控、全周期预算执行。</p>
+    </div>
+    <div class="card">
+      <h3>项目储备库</h3>
+      <p>前沿方向推荐、标准化申报、项目智能鉴定。</p>
+    </div>
+    <div class="card">
+      <h3>费用动态跟踪</h3>
+      <p>支出进度监控、自动归集报表、多维数据分析。</p>
+    </div>
+    <div class="card">
+      <h3>智能辅助决策</h3>
+      <p>对标分析、产学研撮合、政策匹配与能力评估。</p>
+    </div>
   </section>
 
   <section class="dashboard">
-    <strong>数据看板：</strong><br>
+    <strong>数据看板示例：</strong><br>
     当前研发投入执行率：72%<br>
     本季度新增项目数：8<br>
     资金偏离预警项目：2 个
