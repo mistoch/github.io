@@ -1,94 +1,11 @@
+
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>研发准备金管理 - 睿研云枢</title>
-  <style>
-    body {
-      font-family: 'Microsoft YaHei', sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f9fbfe;
-    }
-
-    header {
-      background-color: #003366;
-      color: white;
-      padding: 20px;
-    }
-
-    nav {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    nav .logo {
-      font-size: 1.5em;
-      font-weight: bold;
-    }
-
-    nav ul {
-      list-style: none;
-      display: flex;
-      gap: 20px;
-    }
-
-    nav ul li a {
-      color: white;
-      text-decoration: none;
-      font-weight: 500;
-    }
-
-    .container {
-      padding: 30px 20px;
-    }
-
-    .section-title {
-      color: #003366;
-      font-size: 1.8em;
-      margin-bottom: 10px;
-    }
-
-    .description {
-      font-size: 1em;
-      color: #333;
-      margin-bottom: 30px;
-    }
-
-    .card-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 20px;
-    }
-
-    .card {
-      background: white;
-      border-radius: 8px;
-      padding: 20px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    }
-
-    .card h3 {
-      color: #003366;
-    }
-
-    .dashboard {
-      margin-top: 40px;
-      background-color: #fff;
-      padding: 20px;
-      border-left: 5px solid #003366;
-    }
-
-    footer {
-      background-color: #003366;
-      color: white;
-      text-align: center;
-      padding: 10px;
-      margin-top: 50px;
-    }
-  </style>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
@@ -96,8 +13,8 @@
     <nav>
       <div class="logo">睿研云枢</div>
       <ul>
-        <li><a href="#">首页</a></li>
-        <li><a href="#">研发准备金</a></li>
+        <li><a href="index.html">首页</a></li>
+        <li><a href="yfzbj.html">研发准备金</a></li>
         <li><a href="#">项目储备库</a></li>
         <li><a href="#">费用跟踪</a></li>
         <li><a href="#">智能决策</a></li>
@@ -115,11 +32,11 @@
     <div class="card-grid">
       <div class="card">
         <h3>准备金计提智能测算</h3>
-        <p>整合国家统计局和企业历史数据，构建分区域、分行业的差异化推荐模型，并结合LSTM预测生成未来3年计提建议。</p>
+        <p>构建推荐模型，并结合LSTM预测生成未来3年计提建议。</p>
       </div>
       <div class="card">
         <h3>资金流动态监控</h3>
-        <p>设立“3+8+N”资金池体系，实现多维度追踪与分析，支持偏离预警、缺口预测与调整建议生成。</p>
+        <p>“3+8+N”资金池体系，支持偏离预警、调整建议生成。</p>
       </div>
     </div>
 
@@ -127,7 +44,7 @@
       <strong>示例看板：</strong><br>
       当前已计提总额：¥ 12,500,000<br>
       计提建议偏离度：+5.2%<br>
-      季度投入进度：83%（比预期快 3%）<br>
+      季度投入进度：83%<br>
       异常预警项目数：1 个
     </div>
   </div>
